@@ -25,5 +25,72 @@
             </div>
         </div>
     </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I've always been a bit of a nerd.
+                        <br>
+                        Growing up in New England, I had a love of abstract ideas and complex concepts, from sci-fi to cosmology, and that passion eventually led me to studying physics. I've always enjoyed problem-solving, and the logical nature of math, so it seemed like a natural fit. I graduated in 2019 with a B.S. in physics, but finding a job in the industry was another matter entirely. 
+                        <br>
+                        I decided to pivot to software engineering, as I had taken a few coding classes in school, and enjoyed them immensely. In the spring of 2020, I attended a “coding bootcamp” called Revature, in a full-stack web development program focusing on C# and the .Net tech stack. But with the lockdowns that came that fateful summer, many job opportunities dried up.
+                        <br>
+                        I eventually took a supervisor position at Walmart, and ended up learning a lot more than I expected to. I had been a team-lead on 2 group projects at Revature, which certainly helped, but this was a new challenge altogether. This was my first official position of leadership, and it taught me so much about the added responsibilities that came with it.
+                        <br>
+                        In early 2022, I heard about a new school, in Tulsa, called Holberton. They have a much more in-depth full-stack program here, where I'm getting a lot of hands-on experience with a number of languages and frameworks, such as Python, Node.js, React, Mysql, Javascript, C, and more.
+                        <br>
+                        With my soft skills and technical expertise combined, I offer a unique package. That of a nerd who can program and translate the most complex of data. But also one with enough life experience to relate and communicate with anyone, be it as a team-member or leader. I've always felt like a man with a foot in 2 worlds, in more ways than one, but now I think that just gives me a more well-rounded perspective.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End</span><br>User-facing web development (HTML,CSS,Javascript)</li>
+                        <li><span>Back-End</span><br>Server-side programming (Python, C#, Mysql, etc)</li>
+                        <li><span>Leadership & Communication</span><br>Teamwork and team-management</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Full-Stack Web Development at Holberton School Tulsa.</li>
+                        <li><span>2021 - 2022</span><br>Front-End Supervisor at Walmart.</li>
+                        <li><span>2020</span><br>Full-Stack Web Development at Revature.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Full-Stack Web Development at Holberton School Tulsa.</li>
+                        <li><span>2019</span><br>B.S. Physics at Massachusetts College of Liberal Arts.</li>
+                    </ul>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
 </body>
 </html>
