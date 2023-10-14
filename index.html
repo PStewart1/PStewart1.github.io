@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/177dc90c85.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -15,8 +17,8 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#services">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -40,69 +42,92 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>I've always been a bit of a nerd.
                         <br>
-                        Growing up in New England, I had a love of abstract ideas and complex concepts, from sci-fi to cosmology, and that passion eventually led me to studying physics. I've always enjoyed problem-solving, and the logical nature of math, so it seemed like a natural fit. I graduated in 2019 with a B.S. in physics, but finding a job in the industry was another matter entirely. 
+                        Growing up in New England, I had a love of abstract ideas and complex concepts, from sci-fi to
+                        cosmology, and that passion eventually led me to studying physics. I've always enjoyed
+                        problem-solving, and the logical nature of math, so it seemed like a natural fit. I graduated in
+                        2019 with a B.S. in physics, but finding a job in the industry was another matter entirely.
                         <br>
-                        I decided to pivot to software engineering, as I had taken a few coding classes in school, and enjoyed them immensely. In the spring of 2020, I attended a “coding bootcamp” called Revature, in a full-stack web development program focusing on C# and the .Net tech stack. But with the lockdowns that came that fateful summer, many job opportunities dried up.
+                        I decided to pivot to software engineering, as I had taken a few coding classes in school, and
+                        enjoyed them immensely. In the spring of 2020, I attended a “coding bootcamp” called Revature,
+                        in a full-stack web development program focusing on C# and the .Net tech stack. But with the
+                        lockdowns that came that fateful summer, many job opportunities dried up.
                         <br>
-                        I eventually took a supervisor position at Walmart, and ended up learning a lot more than I expected to. I had been a team-lead on 2 group projects at Revature, which certainly helped, but this was a new challenge altogether. This was my first official position of leadership, and it taught me so much about the added responsibilities that came with it.
+                        I eventually took a supervisor position at Walmart, and ended up learning a lot more than I
+                        expected to. I had been a team-lead on 2 group projects at Revature, which certainly helped, but
+                        this was a new challenge altogether. This was my first official position of leadership, and it
+                        taught me so much about the added responsibilities that came with it.
                         <br>
-                        In early 2022, I heard about a new school, in Tulsa, called Holberton. They have a much more in-depth full-stack program here, where I'm getting a lot of hands-on experience with a number of languages and frameworks, such as Python, Node.js, React, Mysql, Javascript, C, and more.
+                        In early 2022, I heard about a new school, in Tulsa, called Holberton. They have a much more
+                        in-depth full-stack program here, where I'm getting a lot of hands-on experience with a number
+                        of languages and frameworks, such as Python, Node.js, React, Mysql, Javascript, C, and more.
                         <br>
-                        With my soft skills and technical expertise combined, I offer a unique package. That of a nerd who can program and translate the most complex of data. But also one with enough life experience to relate and communicate with anyone, be it as a team-member or leader. I've always felt like a man with a foot in 2 worlds, in more ways than one, but now I think that just gives me a more well-rounded perspective.
+                        With my soft skills and technical expertise combined, I offer a unique package. That of a nerd
+                        who can program and translate the most complex of data. But also one with enough life experience
+                        to relate and communicate with anyone, be it as a team-member or leader. I've always felt like a
+                        man with a foot in 2 worlds, in more ways than one, but now I think that just gives me a more
+                        well-rounded perspective.
                     </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-titles">
+                        <!-- <p class="tab-links " onclick="opentab('skills')">Skills</p> -->
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- <div class="tab-contents " id="skills">
                     <ul>
                         <li><span>Front-End</span><br>User-facing web development (HTML,CSS,Javascript)</li>
                         <li><span>Back-End</span><br>Server-side programming (Python, C#, Mysql, etc)</li>
                         <li><span>Leadership & Communication</span><br>Teamwork and team-management</li>
                     </ul>
+                </div> -->
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Full-Stack Web Development at Holberton School Tulsa.
+                            </li>
+                            <li><span>2021 - 2022</span><br>Front-End Supervisor at Walmart.</li>
+                            <li><span>2020</span><br>Full-Stack Web Development at Revature.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Full-Stack Web Development at Holberton School Tulsa.</li>
+                            <li><span>2019</span><br>B.S. Physics at Massachusetts College of Liberal Arts.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2022 - Current</span><br>Full-Stack Web Development at Holberton School Tulsa.</li>
-                        <li><span>2021 - 2022</span><br>Front-End Supervisor at Walmart.</li>
-                        <li><span>2020</span><br>Full-Stack Web Development at Revature.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024</span><br>Full-Stack Web Development at Holberton School Tulsa.</li>
-                        <li><span>2019</span><br>B.S. Physics at Massachusetts College of Liberal Arts.</li>
-                    </ul>
-                </div>
-            </div>
-                
+
             </div>
         </div>
     </div>
 
-    <!------------------ Services ------------------>
+    <!------------------ Skills ------------------>
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">My Skills</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium, possimus suscipit alias ab sunt aut labore eius et, quaerat reprehenderit ducimus nihil beatae voluptates in aperiam dolore dicta at?</p>
-                    <a href="#">Learn more</a>
+                    <h2>Front-End</h2>
+                    <p>Built and designed multiple responsive web-pages. 
+                        Experienced with single-page applications and frameworks, asynchronous request handling, and RESTful api design.
+                        <br>(HTML, CSS, Javascript, jQuery, React, Angular)
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium, possimus suscipit alias ab sunt aut labore eius et, quaerat reprehenderit ducimus nihil beatae voluptates in aperiam dolore dicta at?</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Back-End</h2>
+                    <p>Skilled with server-side logic, including scripting languages, relational databases, and
+                        automated testing frameworks.
+                        <br>(Python, C#, Node.js, Mysql, Microsoft SQL Server, UnitTest)
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium, possimus suscipit alias ab sunt aut labore eius et, quaerat reprehenderit ducimus nihil beatae voluptates in aperiam dolore dicta at?</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <h2>Communication & Leadership</h2>
+                    <p>Coached and lead teams on multiple projects. Managed a team of 30 on interpersonal
+                        and customer care best practices. </p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
         </div>
@@ -117,7 +142,7 @@
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p> The app connects you to the talented people around the world. 
+                        <p> The app connects you to the talented people around the world.
                             Download it from the play store.
                         </p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
@@ -127,7 +152,7 @@
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p> The app connects you to the talented people around the world. 
+                        <p> The app connects you to the talented people around the world.
                             Download it from the play store.
                         </p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
@@ -137,7 +162,7 @@
                     <img src="images/work-3.png" alt="">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p> The app connects you to the talented people around the world. 
+                        <p> The app connects you to the talented people around the world.
                             Download it from the play store.
                         </p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
@@ -182,7 +207,7 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        
+
         function opentab(tabname) {
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
@@ -197,30 +222,31 @@
 
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        
+
         function openmenu() {
             sidemenu.style.right = "0";
         }
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
-        
+
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx7rxXY4FZYL3NhBnFgIQVUZXbaMgl_CMVnXoSmLzb7d76QsWWLfFmprVIuv2aulP-z/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById('msg')
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-              msg.innerHTML = "Message Sent. Thank You!"
-              setTimeout(function(){ msg.innerHTML = "" }, 5000)
-              form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent. Thank You!"
+                    setTimeout(function () { msg.innerHTML = "" }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
+
 </html>
