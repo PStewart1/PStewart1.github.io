@@ -1,6 +1,6 @@
 :root {
     --color-primary: #38b6ff;
-    --color-seconaary: #b54769;
+    --color-seconaary: #3888ff;
     /* --new-test-color: #38b6ff; */
 }
 
@@ -371,11 +371,12 @@ form .button-2{
 
 .copyright{
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     width: 100%;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 /* CSS for small screen */
@@ -453,7 +454,8 @@ nav .fa-solid, nav .fa-regular{
     }
 
     .copyright{
-        font-size: 14px;
+        padding: 10px 0;
+        font-size: 12px;
     }
 }
 
